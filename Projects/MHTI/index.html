@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+        <link rel="stylesheet" href="style.css">
+
+    <!-- JavaScript -->
+        <!-- Chart.js Library for drawing charts -->
+        <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js"></script>
+
+    <title>Mental Health in Tech-Industry</title>
+</head>
+
+<body>
+    <!-- Header -->
+        <section id="header">
+            <div class="header container">
+                <div class="navbar">
+                    <div class="logo">
+                        <a href="#context" class="name"><h1><span>MH</span>TI</h1></a>
+                    </div>
+                    <div class="navlist">
+                        <div class="hamburgerMenue"><div class="bar"></div></div>
+                            <ul>
+                                <li><a href="#context" data-after="Context" onclick="hideMenue()">Context</a></li>
+                                <li><a href="#chartProperties" data-after="Chart" onclick="hideMenue()">Chart</a></li>
+                            </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    <!-- Theme Context Section -->
+        <section id="context">
+            <div class="containerWelcomePage">
+                <!-- Dynamically Typed Text -->
+                    <p id="dynamicText"><span class="typed-text"></span><span class="cursor">&nbsp;</span></p>
+
+                <!-- Doughnut Charts -->
+                    <div id="canvasHolder">
+                        <canvas id="doughnutChart2014"></canvas>
+                    </div>
+
+                    <div id="canvasHolder">
+                        <canvas id="doughnutChart2015"></canvas>
+                    </div>
+
+                    <div id="canvasHolder">
+                        <canvas id="doughnutChart2016"></canvas>
+                    </div>
+
+                    <div id="canvasHolder">
+                        <canvas id="doughnutChart2017"></canvas>
+                    </div>
+
+                    <div id="canvasHolder">
+                        <canvas id="doughnutChart2018"></canvas>
+                    </div>
+
+                    <div id="canvasHolder">
+                        <canvas id="doughnutChart2019"></canvas>
+                    </div>
+            
+                <p id="textAtEnd">Let's look inside the bubbles that people create around themselves as their personal safe space...<span class="cursor">&nbsp;</span></p>
+
+                    <div id="canvasHolderMain">
+                        <canvas id="doughnutChart"></canvas>
+                    </div>
+
+                <!-- Buttons -->
+                    <div id="skipButton"><p id="skipBtn" type="button">skip</p></div>
+                    <div id="readAgainButton"><p id="readAgainBtn" type="button">reread</p></div>
+                    <div id="toBubbleChartButton"><a href="#chartProperties" type="button" class="button">view bubbles</a></div>
+            </div>
+        </section>
+
+    <!-- Chart Section -->
+    <section id="chartProperties">
+        <div class="chart">
+            <div class="chartTop">
+                <h2 class="sectionTitle"><span>Mental Health</span> in Tech-Industry</h1>
+            </div>
+            <div class="chartBottom">
+                <div class="chartItem">
+                    <div id="wrapperCommonness" style="width: 800px; height: 600px; position: relative;">
+                        <canvas id="bubbleChartCommonness" width="400" height="300"></canvas>
+                    </div>
+
+                    <div id="wrapperAge" style="width: 800px; height: 600px; position: relative; display: none;">
+                        <canvas id="bubbleChartAge" width="400" height="300"></canvas>
+                    </div>
+
+                    <div id="wrapperGender" style="width: 800px; height: 600px; position: relative; display: none;">
+                        <canvas id="bubbleChartGender" width="400" height="300"></canvas>
+                    </div>
+
+                    <div id="wrapperLocation" style="width: 800px; height: 600px; position: relative; display: none;">
+                        <canvas id="bubbleChartLocation" width="400" height="300"></canvas>
+                    </div>
+
+                    <div id="wrapperJob" style="width: 800px; height: 600px; position: relative; display: none;">
+                        <canvas id="bubbleChartJob" width="400" height="300"></canvas>
+                    </div>
+
+                    <!-- <div id="wrapperWorkplace" style="width: 800px; height: 600px; display: none;">
+                        <canvas id="bubbleChartWorkplace" width="400" height="300"></canvas>
+                    </div> -->
+
+                    <div id="bubbleChartButtons">
+                        <button id="commonnessBtn" onclick="commonnessOnClick()">commonness</button>
+                        <button id="ageBtn" onclick="ageOnClick()">age</button>
+                        <button id="genderBtn" onclick="genderOnClick()">gender</button>
+                        <button id="locationBtn" onclick="locationOnClick()">location</button>
+                        <button id="jobBtn" onclick="jobOnClick()">job</button>
+                        <button id="workplaceBtn" onclick="workplaceOnClick()">workplace</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <section id="footer">
+        <div class="footer container">
+            <h2>Designed by Yuliya Litvin</h2>
+            <p><a href="https://www.kaggle.com/anth7310/mental-health-in-the-tech-industry?select=mental_health.sqlite">Dataset from Kaggle</a></p>
+            <p><a href="https://osmihelp.org/research">Original Survey from OSMI</a></p>
+        </div>
+    </section>
+
+    <!-- JavaScript --> 
+        <script src="JavaScript/typedText.js"></script>
+        <script src="JavaScript/doughnutChart.js"></script>
+        <script src="JavaScript/bubbleChart.js"></script>
+        <script src="JavaScript/main.js"></script>
+</body>
+</html>
