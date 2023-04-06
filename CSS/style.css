@@ -3731,13 +3731,8 @@ button {
 }
 
 @media screen and (max-width: 400px) {
-    .homeContainer {
-        width: max-content;
-        margin-left: auto;
-        margin-right: auto;
-    }
     .homeContent {
-        margin-left: 0;
+        margin-left: -20%;
     }
 
     .nav_logo {
