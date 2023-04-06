@@ -364,10 +364,16 @@ var artSwiper2 = new Swiper('.swiper_Art_mobile_smaller', {
 
 
 
-/* Show Sidebar (Hamburger Menu) */
+/* Show & Close Sidebar (Hamburger Menu) */
 const navMenu = document.getElementById('sidebar'), 
         navToggle = document.getElementById('navToggle'), 
-        navClose = document.getElementById('nav-close')
+        navClose = document.getElementById('nav-close'),
+        navClose_home = document.getElementById('nav_close_home'), 
+        navClose_about = document.getElementById('nav_close_about'), 
+        navClose_skills = document.getElementById('nav_close_skills'), 
+        navClose_projects = document.getElementById('nav_close_projects'), 
+        navClose_art = document.getElementById('nav_close_art'), 
+        navClose_contact = document.getElementById('nav_close_contact')
 
 if(navToggle) {
     navToggle.addEventListener("click", () => {
@@ -377,6 +383,42 @@ if(navToggle) {
 
 if(navClose) {
     navClose.addEventListener("click", () => {
+        navMenu.classList.remove('show-sidebar')
+    })
+}
+
+if(navClose_home) {
+    navClose_home.addEventListener("click", () => {
+        navMenu.classList.remove('show-sidebar')
+    })
+}
+
+if(navClose_about) {
+    navClose_about.addEventListener("click", () => {
+        navMenu.classList.remove('show-sidebar')
+    })
+}
+
+if(navClose_skills) {
+    navClose_skills.addEventListener("click", () => {
+        navMenu.classList.remove('show-sidebar')
+    })
+}
+
+if(navClose_projects) {
+    navClose_projects.addEventListener("click", () => {
+        navMenu.classList.remove('show-sidebar')
+    })
+}
+
+if(navClose_art) {
+    navClose_art.addEventListener("click", () => {
+        navMenu.classList.remove('show-sidebar')
+    })
+}
+
+if(navClose_contact) {
+    navClose_contact.addEventListener("click", () => {
         navMenu.classList.remove('show-sidebar')
     })
 }
