@@ -357,6 +357,7 @@ button {
 /* --------------------- Home Section ------------------------------------------------ */
 .home {
     height: 100vh;
+    width: 100vw;
 }
 
 .homeContainer {
@@ -365,9 +366,9 @@ button {
     align-items: center;
 }
 
-.homeContent {
+/*.homeContent {
     margin-left: 100px;
-}
+}*/
 
 .homeTitle {
     padding-left: 15px;
@@ -3559,7 +3560,12 @@ button {
 
 @media screen and (max-width: 490px) {
     .homeContent{
-        margin-left: -30px;
+        margin-left: 0;
+    }
+    .homeContainer {
+        margin-left: auto;
+        margin-right: auto;
+        width: max-content;
     }
 
     .nav_logo {
@@ -3567,7 +3573,7 @@ button {
     }
 
     .homeTitle {
-        font-size: 4rem;
+        font-size: 3.5rem;
     }
 
     .homeSubtitle {
