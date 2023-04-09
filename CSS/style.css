@@ -1038,7 +1038,8 @@ button {
 }
 
 .projectFeatures {
-    grid-template: 100% / auto auto;
+    /*grid-template: 100% / auto auto;*/
+    grid-template: auto / auto auto;
     grid-gap: 20px;
     grid-row-gap: 0;
     border-top: 1px solid #DAA520;
