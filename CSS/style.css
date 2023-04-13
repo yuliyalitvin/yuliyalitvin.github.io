@@ -443,24 +443,6 @@ button {
     color: white;
 }
 
-.learnMoreAboutMe_btn:active {
-    background-color: transparent;
-    padding-left: 10px;
-    padding-right: 10px;
-    border: none;
-    margin-left: 0;
-    color: #DAA520;
-}
-
-.learnMoreAboutMe_btn:visited {
-    background-color: transparent;
-    padding-left: 10px;
-    padding-right: 10px;
-    border: none;
-    margin-left: 0;
-    color: #DAA520;
-}
-
 
 /* ------------------------ About Section -------------------------------------------- */
 .about {
