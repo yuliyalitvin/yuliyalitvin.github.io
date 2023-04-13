@@ -181,6 +181,7 @@ button {
     text-align: center;
     font-size: 48px;
     font-family: Mr Dafoe;
+    font-weight: lighter;
     color: #DAA520;
     margin-bottom: 50px;
 }
@@ -427,6 +428,7 @@ button {
 
 .learnMoreAboutMe_btn {
     font-family: Mr Dafoe;
+    font-weight: lighter;
     color: #DAA520;
     font-size: 2rem;
     transition: 0.4s ease;
@@ -525,9 +527,9 @@ button {
 
 .qualificationTitle {
     font-size: 32px;
-    font-weight: 500;
     margin-bottom: 40px;
     font-family: Mr Dafoe;
+    font-weight: lighter;
     letter-spacing: 2px;
     color: #DAA520;
 }
@@ -2403,6 +2405,7 @@ button {
     text-align: center;
     margin-top: 4.5rem;
     font-family: Mr Dafoe;
+    font-weight: lighter;
 }
 
 
