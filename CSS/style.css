@@ -15,6 +15,8 @@
     --bg-black-100: #00011b;
 
     --skin-color: #DAA520;
+
+    scrollbar-gutter: stable;
 }
 
 body.light {
@@ -36,9 +38,11 @@ body.light {
 
 html {
     height: 100%;
+    width: 100%;
     scroll-behavior: smooth;
     -ms-overflow-style: none;
     scrollbar-width: none;
+    overflow-x: hidden;
 }
 
 html::-webkit-scrollbar {
@@ -49,6 +53,7 @@ body {
     /*margin: 0;
     padding: 0;*/
     height: 100%;
+    width: 100%;
 
     font-family: 'Josefin Sans';
     font-size: 20px; 
@@ -312,6 +317,7 @@ button {
     display: none;
     justify-content: center;
     align-items: center;
+    z-index: 20;
 }
 
 .nav_close {
@@ -357,13 +363,15 @@ button {
 /* --------------------- Home Section ------------------------------------------------ */
 .home {
     height: 100vh;
-    width: 100vw;
+    /*width: 100vw;*/
 }
 
 .homeContainer {
     position: relative; 
     height: 100%;
     align-items: center;
+    width: max-content;
+    margin-left: 15%;
 }
 
 /*.homeContent {
@@ -491,14 +499,11 @@ button {
     text-align: left;
     font-size: 18px;
     font-weight: 400;
-    padding-right: 6rem;
+    padding-right: 0;
     color: white;
     margin-top: 20px;
     margin-bottom: 20px;
-}
-
-.aboutDescription_size {
-    width: 495px;
+    width: 100%;
 }
 
 .aboutBorders_smaller {
@@ -938,6 +943,8 @@ button {
     scroll-behavior: smooth;
     -ms-overflow-style: none;
     scrollbar-width: none;*/
+
+    overscroll-behavior: contain;
 }
 
 .info_symbol {
@@ -1992,6 +1999,8 @@ button {
     scroll-behavior: smooth;
     -ms-overflow-style: none;
     scrollbar-width: none;*/
+
+    overscroll-behavior: contain;
 }
 
 .viewProjectModal_exit_btn {
@@ -2054,6 +2063,7 @@ button {
 }
 
 .swiper-container {
+    overflow-x: hidden;
     padding-top: 100px;
     padding-bottom: 100px;
 }
@@ -2514,7 +2524,8 @@ button {
     }
 
     .aboutDescription {
-        padding-right: 6rem;
+        padding-right: 0;
+        width: 100%;
     }
 
     .aboutBorders_smaller {
@@ -2734,8 +2745,9 @@ button {
 
     .aboutDescription {
         padding-left: 0;
-        padding-right: 6rem;
+        padding-right: 0;
         text-align: left;
+        width: 100%;
     }
 
     .aboutBorders_smaller {
@@ -3099,7 +3111,7 @@ button {
     }
     
     .homeTitle {
-        font-size: 6rem;
+        font-size: 5.5rem;
     }
     .homeSubtitle {
         font-size: 38px;
@@ -3356,9 +3368,9 @@ button {
     }
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 620px) {
     .navToggle {
-        right: initial;
+        /* right: initial; */
         left: 1.5rem;
     }
 
@@ -3559,7 +3571,7 @@ button {
     }
 }
 
-@media screen and (max-width: 490px) {
+@media screen and (max-width: 520px) {
     .homeContent{
         margin-left: 0;
     }
