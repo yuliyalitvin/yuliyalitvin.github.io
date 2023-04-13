@@ -909,7 +909,6 @@ button {
 
 
 /* Projects Modal */
-
 .projectsModal {
     position: fixed;
     top: 0;
@@ -921,7 +920,7 @@ button {
     justify-content: center;
     align-items: center;
     padding: 0 1rem;
-    z-index: 3;
+    z-index: 21;
     opacity: 0;
     visibility: hidden;
     transition: 0.3s;
@@ -1972,7 +1971,7 @@ button {
     justify-content: center;
     align-items: center;
     padding: 0 1rem;
-    z-index: 3;
+    z-index: 21;
     opacity: 0;
     visibility: hidden;
     transition: 0.3s; 
@@ -4066,6 +4065,245 @@ button {
 
     .projectsFilters {
         column-gap: 0.25rem;
+    }
+
+    .projectsModalDetails_container {
+        grid-template-columns: 200px;
+    }
+    .projectsModal_details {
+        width: 100%;
+    }
+    .projectsModal_visualDetails {
+        width: 200px;
+    }
+    .projectCard .projectTitle, .projectCard .projectTitle_Anleitung{
+        opacity: 1;
+        filter: brightness(100%);
+        transform: translateY(100%);
+    }
+    .projectCard .project_btn {
+        opacity: 1;
+        filter: brightness(100%);
+        transform: translateY(-50px);
+    }
+    .projectCard {
+        position: relative;
+        display: inline-block;
+        background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.5) 35%, rgba(0,0,0,0.8) 100%);
+
+    }
+    .projectCard img {
+        position: relative;
+        z-index: -1;
+        display: block;
+    }
+    .centerSwiper {
+        position: relative;
+        width: 100%;
+        height: auto;
+        top: 20%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+    .view_symbol {
+        width: 30px;
+        height: 30px;
+    }
+    .viewProjectModalTitle {
+        padding-left: 0;
+        padding-right: 0;
+        padding-top: 50px;
+        font-size: 24px;
+        font-weight: 700;
+    }
+    .info_symbol {
+        width: 30px;
+        height: 30px;
+    }
+    .projectsModalTitle {
+        padding-left: 0;
+        padding-right: 0;
+        padding-top: 50px;
+        font-size: 24px;
+        font-weight: 700;
+    }
+    .projectsModal_details .projectsModalDescription_title {
+        font-size: 20px;
+    }
+    .projectsModal_details .projectsModalDescription_subtitle {
+        font-size: 16px;
+    }
+    .projectsModal_details .projectsModalDescription {
+        font-size: 16px;
+    }
+    .projectsModal_details .projectsModalDescription_features {
+        font-size: 14px;
+    }
+    .projectsModal_details .projectsModalDescription_featuresDetails {
+        font-size: 14px;
+    }
+
+    .infoModal_btns {
+        column-gap: 1.5rem;
+    }
+
+    .artContainer {
+        grid-template-columns: 90%;
+    }
+    .swiper_Art {
+        display: none;
+    }
+    .swiper_Art_mobile {
+        display: none;
+    }
+    .swiper_Art_mobile_smaller {
+        display: block;
+    }
+    .swiper_Art_mobile_smaller .swiper-button-prev, 
+    .swiper_Art_mobile_smaller .swiper-button-next {
+        display: none;
+    }
+    .swiper .swiper-pagination-bullets {
+        display: none;
+    }
+
+    .contactCard {
+        width: max-content;
+        height: max-content;
+    }
+    .contact_icon_1, .contact_icon_2, .contact_icon_3, .contact_icon_4 {
+        width: 80px;
+        height: 80px;
+    }
+
+    .footerContainer {
+        margin-left: 60px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .homeContent {
+        margin-left: 10px;
+    }
+
+    .nav_logo {
+        display: block;
+    }
+    .navToggle {
+        left: 1rem;
+    }
+
+    .container {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .sectionTitle {
+        font-size: 38px;
+    }
+
+    .homeTitle {
+        font-size: 3rem;
+    }
+
+    .homeSubtitle {
+        font-size: 28px;
+    }
+
+    .learnMoreAboutMe_btn {
+        font-size: 1.5rem;
+    }
+
+    .aboutHeading {
+        font-size: 28px;
+    }
+    .aboutDescription {
+        font-size: 16px;
+    }
+    .aboutBoxTitle {
+        font-size: 32px;
+        font-weight: 600;
+    }
+    .qualificationTitle {
+        font-size: 32px;
+    }
+    .timelineTitle {
+        font-size: 20px;
+    }
+    .timelineText {
+        font-size: 18px;
+        font-weight: 400;
+    }
+    .timelineItem .timelineTextLighter {
+        font-size: 16px;
+    }
+
+    .qualificationContainer, 
+    .skillsContainer,
+    /*.projectsContainer, */
+    .contactContainer {
+        grid-template-columns: 1fr;
+    }
+
+    .qualificationContainer {
+        grid-template-columns: 250px;
+    }
+
+    .skillsContainer {
+        grid-template-columns: 250px;
+    }
+    .skillsContainer {
+        grid-template-columns: 250px;
+    }
+    .skillsTabs {
+        display: none;
+    }
+    .skillsContent {
+        display: none;
+    }
+    .skillsTabs_mobile {
+        display: none;
+    }
+    .skillsTabs_mobile_smaller {
+        display: none;
+    }
+    .skillsTabs_mobile_smallest {
+        display: block;
+    }
+    .skillsGroup_mobile {
+        margin-bottom: 3rem;
+    }
+    .skillsGroup_mobile:last-child {
+        margin-bottom: 0;
+    }
+    .skillsTitle {
+        width: 250px;
+        font-size: 20px;
+    }
+    .skills_active .skillsTitle {
+        box-shadow: 100px 0px 150px 0px rgba(218, 165, 32, 0.3);
+    }
+    .skillsSubtitle {
+        font-size: 16px;
+    }
+
+    .projectCard {
+        width: 300px;
+        height: 250px;
+    }
+
+    .projectItem {
+        font-size: 20px;
+    }
+
+    .projectsFilters {
+        column-gap: 0.25rem;
+    }
+
+    .viewProjectModal, .projectsModal {
+        z-index: 21;
     }
 
     .projectsModalDetails_container {
