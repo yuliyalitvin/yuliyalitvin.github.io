@@ -454,9 +454,13 @@ button {
 .aboutContainer {
     grid-template-columns: 400px 400px;
     column-gap: 4rem;
-    align-items: center;
+    /*align-items: center;*/
     justify-content: center;
     margin-bottom: 150px;
+}
+
+.center_vertically {
+    align-items: center;
 }
 
 .aboutMe_imageBox {
@@ -507,11 +511,6 @@ button {
     margin-top: 20px;
     margin-bottom: 20px;
     width: 100%;
-}
-
-.aboutBorders_smaller {
-    padding-top: 43.5px;
-    padding-bottom: 43.5px;
 }
 
 .qualificationTitle, .timelineTitle, .timelineText, .timelineDate {
@@ -715,6 +714,8 @@ button {
 .skillsImage {
     max-width: 70px;
     max-height: 70px;
+    min-width: 70px;
+    min-height: 70px;
     margin-bottom: 15px;
     border-radius: 50%;
     margin-left: auto;
@@ -2453,11 +2454,6 @@ button {
         margin-left: 0;
     }
 
-    .aboutBorders_smaller {
-        padding-top: 43.5px;
-        padding-bottom: 43.5px;
-    }
-
     .skillsTabs_mobile {
         display: none;
     }
@@ -2529,11 +2525,6 @@ button {
     .aboutDescription {
         padding-right: 0;
         width: 100%;
-    }
-
-    .aboutBorders_smaller {
-        padding-top: 43.5px;
-        padding-bottom: 43.5px;
     }
 
     .skillsTabs_mobile {
@@ -2751,11 +2742,6 @@ button {
         padding-right: 0;
         text-align: left;
         width: 100%;
-    }
-
-    .aboutBorders_smaller {
-        padding-top: 43.5px;
-        padding-bottom: 43.5px;
     }
 
     .aboutBox {
