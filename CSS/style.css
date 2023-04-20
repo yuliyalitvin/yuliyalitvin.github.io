@@ -60,8 +60,12 @@ body {
     line-height: 1.5;
     background: linear-gradient(rgba(0, 0, 0, 0.90), rgba(0, 0, 0, 0.90)), url("../Images/BrightSunflowers.jpg");
     background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover; 
+    -webkit-background-size: cover; 
     background-position: center center;
     background-attachment: fixed;
+    background-repeat: no-repeat;
     background-color: #00011b;
 }
 
