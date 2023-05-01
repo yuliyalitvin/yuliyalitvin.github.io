@@ -2430,7 +2430,7 @@ button {
 
 
 /* ------- Responsiveness --------------------------------------------- */
-@media screen and (max-height: 700px) {
+@media screen and (max-height: 720px) {
     .viewProjectModalContent {
         max-height: 100vh;
         overflow-y: auto;
