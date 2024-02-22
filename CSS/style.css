@@ -1314,6 +1314,45 @@ button {
     }
 }
 
+.barAnimation_smartTextEditor_afterEffects {
+    animation: barAnimation_smartTextEditor_afterEffects 20s ease infinite;
+}
+
+@keyframes barAnimation_smartTextEditor_afterEffects {
+    0% {
+        width: 0;
+    }
+    25% {
+        width: 99%;
+    }
+    95% {
+        width: 99%;
+    }
+    100% {
+        width: 0;
+    }
+}
+
+.barAnimation_smartTextEditor_premierePro {
+    animation: barAnimation_smartTextEditor_premierePro 20s ease infinite;
+}
+
+@keyframes barAnimation_smartTextEditor_premierePro {
+    0% {
+        width: 0;
+    }
+    25% {
+        width: 1%;
+    }
+    95% {
+        width: 1%;
+    }
+    100% {
+        width: 0;
+    }
+}
+
+
 
 /* Bar Percentage Animation - WoN */
 
@@ -2288,6 +2327,26 @@ button {
 }
 
 .contact_icon_1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.contact_icon_1_2 {
+    width: 100px;
+    height: 100px;
+    background: url(../Images/Contact_Icons/GitLab/gitlab_icon_golden.png) no-repeat;
+    background-size: cover;
+    border: none;
+    margin-top: 10px;
+}
+
+.contactCard:hover .contact_icon_1_2 {
+    background: url(../Images/Contact_Icons/GitLab/gitlab_icon_white.png) no-repeat;
+    background-size: cover;
+}
+
+.contact_icon_1_2 img {
     width: 100%;
     height: 100%;
     object-fit: cover;
