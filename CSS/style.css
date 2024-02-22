@@ -885,6 +885,36 @@ button {
     background-size: cover;
 }
 
+.project_gitlabBtn {
+    background: url(../Images/Project_Icons/GitLab/gitlab_icon_golden.png);
+    background-size: cover;
+    width: 40px;
+    height: 40px;
+    align-items: center;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.project_gitlabBtn:hover {
+    background: url(../Images/Project_Icons/GitLab/gitlab_icon_white.png);
+    background-size: cover;
+}
+
+.project_gitlabBtn_info {
+    background: url(../Images/Project_Icons/GitLab/gitlab_icon_golden.png);
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+    align-items: center;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.project_gitlabBtn_info:hover {
+    background: url(../Images/Project_Icons/GitLab/gitlab_icon_white.png);
+    background-size: cover;
+}
+
 .project_websiteBtn {
     background: url(../Images/Project_Icons/View/view_icon_golden.png);
     background-size: cover;
@@ -1225,6 +1255,65 @@ button {
     display: block;
     background-color: #DAA520;
 }
+
+/* Bar Percentage Animation - whodunit */
+.barAnimation_whodunit_dart {
+    animation: barAnimation_whodunit_dart 20s ease infinite;
+}
+
+@keyframes barAnimation_whodunit_dart {
+    0% {
+        width: 0;
+    }
+    25% {
+        width: 99.1%;
+    }
+    95% {
+        width: 99.1%;
+    }
+    100% {
+        width: 0;
+    }
+}
+
+.barAnimation_whodunit_html {
+    animation: barAnimation_whodunit_html 20s ease infinite;
+}
+
+@keyframes barAnimation_whodunit_html {
+    0% {
+        width: 0;
+    }
+    25% {
+        width: 0.6%;
+    }
+    95% {
+        width: 0.6%;
+    }
+    100% {
+        width: 0;
+    }
+}
+
+.barAnimation_whodunit_swift {
+    animation: barAnimation_whodunit_swift 20s ease infinite;
+}
+
+@keyframes barAnimation_whodunit_swift {
+    0% {
+        width: 0;
+    }
+    25% {
+        width: 0.2%;
+    }
+    95% {
+        width: 0.2%;
+    }
+    100% {
+        width: 0;
+    }
+}
+
 
 /* Bar Percentage Animation - WoN */
 
